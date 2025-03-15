@@ -18,7 +18,7 @@ export function BasicSidebar() {
             <li>
               <Link href="/internships" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/internships" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
                 <Briefcase className="h-5 w-5" />
-                <span>Internships</span>
+                <span>Home</span>
               </Link>
             </li>
             <li>
@@ -27,12 +27,12 @@ export function BasicSidebar() {
                 <span>Blogs</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/resume" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/resume" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
                 <FileText className="h-5 w-5" />
                 <span>Resume</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="p-4">

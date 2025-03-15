@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { RocketIcon, ShieldCheckIcon, UsersIcon, ArrowRightIcon, BarChartIcon, CodeIcon } from 'lucide-react';
+import { RocketIcon, ShieldCheckIcon, UsersIcon, ArrowRightIcon, BarChartIcon, CodeIcon,MapPinIcon, GaugeIcon, BoltIcon, StarIcon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 const translations = [
   { text: "WELCOME", lang: "English" },
@@ -104,41 +104,56 @@ const LandingPage = () => {
       </div>
 
       {/* Feature Highlights */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Portal?</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">We provide the best tools and resources to help you land your ideal internship.</p>
+{/* Feature Highlights */}
+<div className="max-w-7xl mx-auto px-4 py-16">
+  <div className="text-center mb-16">
+    <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose FairFare?</h2>
+    <p className="text-gray-600 max-w-2xl mx-auto">We ensure fair pricing, faster rides, and a seamless experience for both passengers and drivers.</p>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div className="group">
+      <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-blue-100 h-full">
+        <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
+          <MapPinIcon className="w-7 h-7 text-white" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="group">
-            <div className="p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-blue-100 h-full">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
-                <RocketIcon className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Fast & Efficient</h3>
-              <p className="text-gray-600">Quickly find and apply to internships that match your skills and interests.</p>
-            </div>
-          </div>
-          <div className="group mt-8 md:mt-0">
-            <div className="p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-green-100 h-full">
-              <div className="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
-                <ShieldCheckIcon className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Verified Listings</h3>
-              <p className="text-gray-600">All internships are verified to ensure they meet our quality standards.</p>
-            </div>
-          </div>
-          <div className="group mt-8 md:mt-0">
-            <div className="p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-purple-100 h-full">
-              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
-                <UsersIcon className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Seamless Application</h3>
-              <p className="text-gray-600">Apply to multiple internships with a single click and track your application status.</p>
-            </div>
-          </div>
-        </div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Live Surge Meter</h3>
+        <p className="text-gray-600">Passengers see real-time demand vs. driver availability, ensuring transparent pricing.</p>
       </div>
+    </div>
+    
+    <div className="group">
+      <div className="p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-green-100 h-full">
+        <div className="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
+          <GaugeIcon className="w-7 h-7 text-white" />
+        </div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Priority Subscription</h3>
+        <p className="text-gray-600">Subscribers get priority ride matching and fare protection during peak hours.</p>
+      </div>
+    </div>
+
+    <div className="group">
+      <div className="p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-purple-100 h-full">
+        <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
+          <BoltIcon className="w-7 h-7 text-white" />
+        </div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">AI-Powered Routing</h3>
+        <p className="text-gray-600">Smart predictions help drivers reach high-demand zones before surge pricing kicks in.</p>
+      </div>
+    </div>
+
+    <div className="group">
+      <div className="p-8 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 border border-yellow-100 h-full">
+        <div className="w-14 h-14 bg-yellow-600 rounded-xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform">
+          <StarIcon className="w-7 h-7 text-white" />
+        </div>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900">Gamified Trust Score</h3>
+        <p className="text-gray-600">Drivers & passengers earn scores for reliability; high scores unlock perks like 1.5x peak fares.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Portal Section with Angled Background */}
       <section id='portal' className="relative py-20 overflow-hidden">

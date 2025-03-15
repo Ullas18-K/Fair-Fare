@@ -32,12 +32,12 @@ const LandingPage = () => {
             </div>
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">FairFare</div>
           </div>
-          <div className="hidden md:flex space-x-1">
+          {/* <div className="hidden md:flex space-x-1">
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">Features</Button>
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">Pricing</Button>
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">About</Button>
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">Contact</Button>
-          </div>
+          </div> */}
           <div>
             <Button className="rounded-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
           </div>
@@ -54,7 +54,7 @@ const LandingPage = () => {
           <div className="md:w-1/2 text-left space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
               {/* <span className="block">Find Your</span> */}
-              <span className="bg-gradient-to-r from-blue-600 to-green-500 text-transparent bg-clip-text">{translations[currentTranslation].text}</span>🙏🏻
+              <span className="bg-gradient-to-r from-blue-400 to-purple-800 text-transparent bg-clip-text">{translations[currentTranslation].text}</span>🙏🏻
             </h1>
             <p className="text-xl text-gray-600 max-w-xl">
               Our FairFare connects you with top companies offering exciting internship opportunities.
@@ -63,7 +63,7 @@ const LandingPage = () => {
              <a href='#portal'> <Button size="lg" className="rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-200">
                 Continue as Driver
               </Button></a>
-              <a href='#portal'><Button size="lg" variant="outline" className="rounded-full border-blue-200 text-blue-600 hover:bg-blue-50 flex items-center gap-2">
+              <a href='#portal'><Button size="lg" variant="outline" className="rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-200">
                 Continue as User <ArrowRightIcon className="w-4 h-4" />
               </Button></a>
             </div>
@@ -86,11 +86,11 @@ const LandingPage = () => {
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
             <p className="text-4xl font-bold text-blue-600">98%</p>
-            <p className="text-gray-600">Placement Rate</p>
+            <p className="text-gray-600">Booking Rate</p>
           </div>
           <div className="space-y-2">
             <p className="text-4xl font-bold text-green-600">10k+</p>
-            <p className="text-gray-600">Internships Listed</p>
+            <p className="text-gray-600">Drivers Listed</p>
           </div>
           <div className="space-y-2">
             <p className="text-4xl font-bold text-purple-600">24/7</p>
@@ -98,7 +98,7 @@ const LandingPage = () => {
           </div>
           <div className="space-y-2">
             <p className="text-4xl font-bold text-orange-600">500+</p>
-            <p className="text-gray-600">Companies</p>
+            <p className="text-gray-600">Cotributors</p>
           </div>
         </div>
       </div>
@@ -169,9 +169,9 @@ const LandingPage = () => {
                     <a href="/admin/register">Create Driver Account</a>
                   </Button>
                 </div>
-                <div className="pt-2 text-sm text-gray-500">
+                {/* <div className="pt-2 text-sm text-gray-500">
                   <p>Features include: Internship Management, Application Tracking, Data Analytics, and more.</p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -193,9 +193,9 @@ const LandingPage = () => {
                     <a href="/user/register">Create User Account</a>
                   </Button>
                 </div>
-                <div className="pt-2 text-sm text-gray-500">
+                {/* <div className="pt-2 text-sm text-gray-500">
                   <p>Features include: Internship Search, Application Tracking, Notifications, and more.</p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </div>

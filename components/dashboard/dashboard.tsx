@@ -44,19 +44,19 @@ export default function Dashboard() {
           
           {/* Statistics Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div className="p-6 bg-gray-400 rounded-lg shadow-md">
+            <div className="p-6 bg-black rounded-lg shadow-md">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-bold">Total Internships</h2>
                 <BarChart className="h-6 w-6 text-blue-600" />
               </div>
-              <p className="text-3xl font-bold text-gray-900">120</p>
+              <p className="text-3xl font-bold text-white-900">120</p>
             </div>
-            <div className="p-6 bg-gray-400 rounded-lg shadow-md">
+            <div className="p-6 bg-black rounded-lg shadow-md">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-lg font-bold">Applications</h2>
                 <FileText className="h-6 w-6 text-green-600" />
               </div>
-              <p className="text-3xl font-bold text-gray-900">45</p>
+              <p className="text-3xl font-bold text-white-900">45</p>
             </div>
             <div className="p-6 bg-gray-400 rounded-lg shadow-md">
               <div className="flex items-center justify-between mb-4">
@@ -68,7 +68,7 @@ export default function Dashboard() {
           </div>
 
           {/* Recent Activities Section */}
-          <div className="mb-6">
+          {/* <div className="mb-6">
             <h2 className="text-xl font-bold mb-4">Recent Activities</h2>
             <div className="bg-gray-400 p-4 rounded-lg shadow-md">
               <ul className="space-y-4">
@@ -95,7 +95,7 @@ export default function Dashboard() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           {/* Internship List Section */}
           <div className="mb-6">

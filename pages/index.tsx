@@ -7,6 +7,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
+import Image from 'next/image';
+import fairfarefrontimage from '../assets/fairfarefrontimage.png';
+import DriverDashboard from '../components/dashboard/DriverDashboard';
 
 const translations = [
   { text: "WELCOME", lang: "English" },
@@ -75,12 +78,13 @@ const LandingPage = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-green-400 rounded-2xl blur-xl opacity-20"></div>
-              <img 
-                src="/api/placeholder/600/400" 
-                alt="Hero Section Image" 
-                className="rounded-2xl shadow-2xl relative w-full border border-gray-100" 
-              />
-            </div>
+  <Image 
+    src={fairfarefrontimage}
+    alt="Hero Section Image" 
+    className="rounded-2xl shadow-2xl relative w-full border border-gray-100" 
+    layout="responsive"
+  />
+</div>
           </div>
         </div>
       </div>
@@ -230,7 +234,7 @@ const LandingPage = () => {
                 <div className="md:w-1/3">
                   <div className="w-24 h-24 mx-auto bg-blue-100 rounded-full overflow-hidden">
                     <img
-                      src="/api/placeholder/150/150"
+                      src="./assets/sarah.jpg"
                       alt="Customer"
                       className="w-full h-full object-cover"
                     />
@@ -384,8 +388,6 @@ const LandingPage = () => {
               <li><a href="#docs" className="hover:text-blue-400">Documentation</a></li>
             </ul>
           </div>
-
-          {/* Contact */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
             <p className="text-gray-400">Email: support@fairfare.com</p>

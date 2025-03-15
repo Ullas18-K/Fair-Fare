@@ -38,7 +38,7 @@ const LandingPage = () => {
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">About</Button>
             <Button variant="ghost" className="rounded-full text-gray-600 hover:text-blue-600">Contact</Button>
           </div>
-          <div>
+          <div> 
             <Button className="rounded-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
           </div>
         </div>
@@ -156,17 +156,15 @@ const LandingPage = () => {
 
 
       {/* Portal Section with Angled Background */}
-      <section id='portal' className="relative py-20 overflow-hidden">
-      <div className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 skew-y-3 transform -translate-y-16"></div>
+      <section id='portal' className="relative py-20 bg-gradient-to-br from-blue-100 to-green-50">
         <div className="relative max-w-6xl mx-auto px-4 z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Choose Your Portal</h2>
-            <p className="text-blue-100 max-w-xl mx-auto">Whether you're an admin managing internships or a user applying for them, we've got you covered.</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Choose Your Portal</h2>
+            <p className="text-gray-600 max-w-xl mx-auto">Whether you're an admin managing internships or a user applying for them, we've got you covered.</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            <Card className="bg-white/95 backdrop-blur-sm border-none rounded-xl overflow-hidden shadow-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+            <Card className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg transform hover:translate-y-[-8px] transition-all duration-300">
               <div className="h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
               <CardHeader className="pb-2">
                 <div className="flex items-center justify-between">
@@ -190,7 +188,7 @@ const LandingPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/95 backdrop-blur-sm border-none rounded-xl overflow-hidden shadow-2xl transform hover:translate-y-[-8px] transition-all duration-300">
+            <Card className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg transform hover:translate-y-[-8px] transition-all duration-300">
               <div className="h-2 bg-gradient-to-r from-green-400 to-green-600"></div>
               <CardHeader className="pb-2">
                 <div className="flex items-center justify-between">
@@ -215,8 +213,7 @@ const LandingPage = () => {
             </Card>
           </div>
         </div>
-        </div>
-        </section>
+      </section>
 
       {/* Testimonial Section */}
       <div className="max-w-6xl mx-auto px-4 py-20">

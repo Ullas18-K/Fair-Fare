@@ -1,14 +1,23 @@
-import React from "react";
+// FILE: components/ui/Progress.tsx
+"use client"
+import React from 'react';
 
-const Progress = ({ value = 0 }) => {
+interface ProgressProps {
+  value: number;
+  max: number;
+}
+
+const Progress: React.FC<ProgressProps> = ({ value, max }) => {
+  const percentage = (value / max) * 100;
+
   return (
     <div className="w-full bg-gray-200 rounded-full h-4">
       <div
-        className="bg-blue-500 h-4 rounded-full transition-all duration-300"
-        style={{ width: `${value}%` }}
+        className="bg-blue-600 h-4 rounded-full"
+        style={{ width: `${percentage}%` }}
       ></div>
     </div>
   );
 };
 
-export default Progress;
+export default Progress;

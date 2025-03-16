@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Briefcase, FileText, LogOut, Newspaper,Home } from "lucide-react";
 
-export function BasicSidebar() {
+export function SidebarDrive() {
   const pathname = usePathname()
 
   return (
@@ -16,27 +16,28 @@ export function BasicSidebar() {
         <nav className="flex-1 p-4">
           <ul className="space-y-2">
             <li>
-              <Link href="/internships" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/internships" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
-                <Briefcase className="h-5 w-5" />
-                <span>Internships</span>
+              <Link href="/driver/dashboard" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/user/dashboard" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
+              <Home className="h-5 w-5" />
+                <span>Home</span>
               </Link>
             </li>
             <li>
               <Link href="/book" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/book" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
                 <Newspaper className="h-5 w-5" />
-                <span>Book a ride</span>
+                <span>Driver Stats</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/ride" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/ride" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
                 <FileText className="h-5 w-5" />
-                <span>Ride History</span>
+                <span>User Reviews
+                </span>
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link href="/resume" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/resume" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
+              <Link href="/driver/profile" className={`flex items-center gap-2 p-2 rounded-md ${pathname === "/driver/profile" ? "bg-gray-700" : "hover:bg-gray-700"}`}>
                 <FileText className="h-5 w-5" />
-                <span>Subscriptions</span>
+                <span>Profile Settings</span>
               </Link>
             </li>
           </ul>

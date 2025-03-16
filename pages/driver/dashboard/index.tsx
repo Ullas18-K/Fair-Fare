@@ -1,9 +1,10 @@
-import DriverDash from '@/components/DriverDash'
+"use client"
+import DriverDashboard from '@/components/dashboard/DriverDashboard'
 import React from 'react'
 
-const Page: React.FC = () => {
+ const page = () => {
   return (
-    <DriverDash />
+    <DriverDashboard />
   )
 }
-
+export default page

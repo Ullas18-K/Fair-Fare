@@ -60,7 +60,7 @@ export default function Dashboard() {
     { time: '9 AM', demand: 30, drivers: 45 },
     { time: '10 AM', demand: 40, drivers: 42 },
     { time: '11 AM', demand: 45, drivers: 40 },
-    { time: '15PM', demand: 50, drivers: 35 },
+    { time: '15 PM', demand: 50, drivers: 35 },
     { time: 'Now', demand: 75, drivers: 42 },
     { time: '1 PM', demand: 60, drivers: 45, predicted: true },
     { time: '2 PM', demand: 50, drivers: 48, predicted: true },
@@ -350,7 +350,7 @@ export default function Dashboard() {
                         <span className="font-medium">Fare locked</span>
                         <span className="text-green-600 font-medium">{formatTime(lockCountdown)} remaining</span>
                       </div>
-                      <Progress value={(lockCountdown / 300) * 100} />
+                      <Progress value={(lockCountdown / 300) * 100} max={100} />
                       <p className="mt-2 text-sm text-gray-500">Your fare is protected from surge pricing until the timer expires.</p>
                     </div>
                   ) : (
@@ -383,7 +383,7 @@ export default function Dashboard() {
                     <div className="text-2xl font-bold">{trustScore}</div>
                     <div className="text-sm text-gray-500">/ 100</div>
                   </div>
-                  <Progress value={trustScore} />
+                  <Progress value={trustScore} max={100} />
                 </CardContent>
               </Card>
               
